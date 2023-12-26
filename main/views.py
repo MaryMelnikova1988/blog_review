@@ -7,7 +7,7 @@ def index(request):
         email = request.POST.get('email')
         message = request.POST.get('message')
         print(f'You have new message from {name}({email}): {message}')
-    return render(request, 'main2/index.html')
+    return render(request, 'main/index.html')
 
 
 def contact(request):
@@ -16,4 +16,4 @@ def contact(request):
         email = request.POST.get('email')
         message = request.POST.get('message')
         print(f'You have new message from {name}({email}): {message}')
-    return render(request, 'main2/contact.html')
+    return render(request, 'main/contact.html')
